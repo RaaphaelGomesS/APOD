@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <title>APOD</title>
+</head>
+
+<body>
+    
+    <div class="bg-image">
+    </div>
+ 
+    <div class="page">
+        
+        <header class="cabecalho">
+            <h1>APOD -  Astronomy Picture of The Day</h1>
+            <form class="form">
+                <label for="dia">Escolha uma data para ver o conteúdo:</label><br>
+                <input id="dia" name="dia" type="date" min="1995-06-16"><br>
+                <input id="button" type="submit">
+            </form>
+
+        </header>
+
+        <article class="conteudo">
+
+            <h2 id="titulo"></h2>
+
+            <p id="data"></p>
+                
+            <div class="imagem">
+            </div>
+            
+            <div class="video">   
+            </div>
+
+            <p id="creditos"></p>
+
+            <p id="texto"></p>
+
+        </article>
+
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./index.js"></script>
+
+</html>
