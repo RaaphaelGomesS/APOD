@@ -2,6 +2,7 @@ let botao = document.getElementById('button')
 
 botao.addEventListener('click', function(evento) {
     evento.preventDefault();
+    $("#voltar").css("display", "inline")
     requisicao();
 });
 
@@ -26,10 +27,11 @@ function requisicao(){
 function exibeConteudo(result){
     
     if(result.media_type === "image"){
-        $(".imagem").html(`<img id="imag"src="${result.url}">`)
-    }else{
+        $(".imagem").html(`<img id="imag"src="${result.hdurl}">`)
+    
+    }else if(result.media_type === "video"){
         $("#imag").css("display","none");
-        $(".video").html(`<video id="video"src="${result.url}">`)
+        $(".video").html(`<iframe id="video" src="${result.url}"></iframe>`)
     }
     
     $("#titulo").html(`${result.title}`)
