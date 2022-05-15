@@ -11,7 +11,9 @@ body{
     background-position: center;
     background-size: cover;
     color: white;
+    backdrop-filter: blur(6px);
 }
+
 
 .page{
     display: flex;
@@ -25,6 +27,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
 }
 
 h1{
