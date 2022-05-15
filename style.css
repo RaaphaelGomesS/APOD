@@ -7,11 +7,16 @@
 
 body{
     background-image: url(./imagens/4k-space-wallpaper-9.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
     color: white;
+    
     backdrop-filter: blur(6px);
+    -o-backdrop-filter: blur(6px);
+    -moz-backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    -ms-backdrop-filter: blur(6px);
 }
 
 
@@ -71,15 +76,20 @@ label{
 }
 
 .conteudo{
-display: flex;
-flex-direction: column;
-align-items: center;
-font-size: 20px;
-font-style: inherit;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-size: 20px;
+    font-style: inherit;
 }
 
 #creditos{
     padding: 10px;
+}
+
+#imag{
+    width: 620px;
 }
 
 #texto{
@@ -92,7 +102,6 @@ font-style: inherit;
 #titulo{
     font-size: 50px;
     text-shadow: 2px 2px 2px rgb(255, 81, 0);;
-    padding: 10px;
     text-align: justify;
 }
 
